@@ -1,3 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.section--reached h2 {
+    opacity: 1;
+}
+.section2__title {
+  opacity: 0;
+  transition: all 0.5s;
+  color: white;
+}
 
 .hvr-sink {
   animation: arrow 1s infinite;

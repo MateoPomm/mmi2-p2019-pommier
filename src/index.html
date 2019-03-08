@@ -14,7 +14,8 @@
 
     <section class="section home">
       <h1 class="home__title">Lost In Space</h1>
-      <i class="fas fa-angle-down home__arrow hvr-sink"></i>
+      <img src="./img/logoNasa.png" class="home__logo">
+      <a class="home__arrow" href="#products"><i class="fas fa-angle-down hvr-sink"></i>
     </section>
 
 <!--==================================================  PAGE WEB  ==================================================-->
@@ -47,7 +48,13 @@
 <!--==================================================  MAIN  ==================================================-->
 
       <main class="main">
-        <section class="section section2">
+        <section class="section products" id="products">
+          <h2 class="section2__title">Hello</h2>
+          <div class="carousel">
+            <div class="carousel-cell">...</div>
+            <div class="carousel-cell">...</div>
+            <div class="carousel-cell">...</div>
+          </div>
         </section>
         <section class="section section3">
         </section>
@@ -61,24 +68,28 @@
 
     </div>
 
-
+  <script src="./js/script.js"></script>
   <script type="text/javascript">
 
     /*const nav = document.getElementById('nav');
     const menu = document.getElementById('menu');
     menu.addEventListener("click", function() {
       nav.classList.toggle("visible");
-    });*/
-    var header = document.querySelector("#siteWrapper header");
+    });
+    */
 
-function scrolled(){
-  var windowHeight = document.body.clientHeight,
-    currentScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
-  header.className = (currentScroll >= windowHeight) ? "fixed" : "";
-}
 
-addEventListener("scroll", scrolled, false);
+    const header = document.querySelector("#siteWrapper header");
+
+    function scrolled(){
+      const windowHeight = document.body.clientHeight,
+        currentScroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+      header.className = (currentScroll >= windowHeight) ? "fixed" : "";
+    }
+
+    addEventListener("scroll", scrolled, false);
   </script>
 </body>
 </html>

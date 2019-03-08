@@ -10,13 +10,21 @@
   align-items: center;
   justify-content: space-around;
   color: white;
+  height: 100%;
 
   .home__title {
     font-size: 3rem;
     font-family: 'space';
     text-align: center;
   }
+  .home__logo {
+    width: 200px;
+  }
   .home__arrow {
-    font-size: 4rem;
+    color: white;
+
+    i {
+      font-size: 4rem;
+    }
   }
 }
