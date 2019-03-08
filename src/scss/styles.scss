@@ -1,33 +1,18 @@
-body {
-  margin: 0;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-.header {
-  background: #FFFFFF;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 15%;
+@import 'vendors/reset.scss';
+@import 'vendors/hamburger.scss';
 
-  h1 {
-    text-align: center;
+@import 'global/layout.scss';
+@import 'global/fonts.scss';
+@import 'global/animations.scss';
 
-  }
-}
-.main {
-  width: 100%;
-  height: 100%;
-}
-.section {
-  width: 100%;
-  height: 100%;
-}
-#section1 {
-  background-color: #080828;
-}
-#section2 {
-  background-color: #A088D8;
-}
+@import 'blocs/header.scss';
+@import 'blocs/main.scss';
+@import 'blocs/home.scss';
+
+
+
+
+
+
+
+

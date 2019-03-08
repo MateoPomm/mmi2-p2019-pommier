@@ -1,0 +1,22 @@
+.home {
+  background: url('./../../src/img/bg1.png');
+  background-color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+
+  .home__title {
+    font-size: 3rem;
+    font-family: 'space';
+    text-align: center;
+  }
+  .home__arrow {
+    font-size: 4rem;
+  }
+}

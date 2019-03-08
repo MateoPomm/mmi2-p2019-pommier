@@ -6,16 +6,79 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Lost In Space</title>
   <link rel="stylesheet" href="scss/styles.scss">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
-  <header class="header">
-    <h1></h1>
-  </header>
-  <main class="main">
-    <section class="section" id="section1">
+
+<!--==================================================  HOME  ==================================================-->
+
+    <section class="section home">
+      <h1 class="home__title">Lost In Space</h1>
+      <i class="fas fa-angle-down home__arrow hvr-sink"></i>
     </section>
-    <section class="section" id="section2">
-    </section>
-  </main>
+
+<!--==================================================  PAGE WEB  ==================================================-->
+
+    <div id="siteWrapper">
+
+<!--==================================================  HEADER  ==================================================-->
+
+      <header class="header">
+        <label>
+          <input type="checkbox">
+            <span class="menu" id="menu">
+              <span class="hamburger">
+              </span>
+            </span>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Work</a>
+            </li>
+          </ul>
+        </label>
+      </header>
+
+<!--==================================================  MAIN  ==================================================-->
+
+      <main class="main">
+        <section class="section section2">
+        </section>
+        <section class="section section3">
+        </section>
+        <section class="section section4">
+        </section>
+        <section class="section section5">
+        </section>
+        <section class="section section6">
+        </section>
+      </main>
+
+    </div>
+
+
+  <script type="text/javascript">
+
+    /*const nav = document.getElementById('nav');
+    const menu = document.getElementById('menu');
+    menu.addEventListener("click", function() {
+      nav.classList.toggle("visible");
+    });*/
+    var header = document.querySelector("#siteWrapper header");
+
+function scrolled(){
+  var windowHeight = document.body.clientHeight,
+    currentScroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+  header.className = (currentScroll >= windowHeight) ? "fixed" : "";
+}
+
+addEventListener("scroll", scrolled, false);
+  </script>
 </body>
 </html>
