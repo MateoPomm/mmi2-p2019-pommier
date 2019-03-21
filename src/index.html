@@ -26,43 +26,46 @@
 
       <header class="header">
         <label>
-          <input type="checkbox">
+          <input type="checkbox" id="checkbox">
             <span class="menu" id="menu">
-              <span class="hamburger">
+              <span class="hamburger" id="hamburger">
               </span>
             </span>
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Work</a>
-            </li>
-          </ul>
+            <div class="navMenu" id="navMenu">
+                <ul>
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Work</a>
+                  </li>
+                </ul>
+            </div>
         </label>
       </header>
+
 
 <!--==================================================  MAIN  ==================================================-->
 
       <main class="main">
-        <section class="section products" id="products">
-          <h2 class="section2__title">Hello</h2>
-          <div class="carousel">
-            <div class="carousel-cell">...</div>
-            <div class="carousel-cell">...</div>
-            <div class="carousel-cell">...</div>
+        <section class="section section-2 products" id="products">
+          <h2 class="section-2__title">Des téléscopes d'exception</h2>
+        </section>
+        <section class="section section-3">
+          <div class="main-carousel">
+            <div class="carousel-cell"><img src="./img/logoNasa.png"></div>
+            <div class="carousel-cell"></div>
+            <div class="carousel-cell"></div>
           </div>
         </section>
-        <section class="section section3">
+        <section class="section section-4">
         </section>
-        <section class="section section4">
+        <section class="section section-5">
         </section>
-        <section class="section section5">
-        </section>
-        <section class="section section6">
+        <section class="section section-6">
         </section>
       </main>
 
@@ -81,6 +84,8 @@
 
 
     const header = document.querySelector("#siteWrapper header");
+    let menu = document.getElementById('navMenu');
+
 
     function scrolled(){
       const windowHeight = document.body.clientHeight,
@@ -90,6 +95,19 @@
     }
 
     addEventListener("scroll", scrolled, false);
+
+    document.getElementById('hamburger').addEventListener('click', function() {
+        menu.classList.toggle('activeMenu')
+    })
+
+    let a = document.getElementsByTagName('a');
+      for (var i=0;i<a.length;i++){
+        a[i].addEventListener('click', function() {
+          menu.classList.remove('activeMenu')
+          document.getElementById('checkbox').checked = false;
+        });
+      }
+
   </script>
 </body>
 </html>

@@ -43,8 +43,11 @@ label {
     display: none;
   }
   input:checked + .menu {
-    box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
-    border-radius: 0;
+    /*height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 0;*/
+
     .hamburger {
       transform: rotate(45deg);
       &:after {
@@ -57,7 +60,6 @@ label {
       }
     }
   }
-
   input:checked + .menu + ul {
     opacity: 1;
   }
@@ -65,10 +67,6 @@ label {
   ul {
     z-index: 200;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    opacity: 0;
     transition: .25s 0s ease-in-out;
   }
 
@@ -77,6 +75,8 @@ label {
     display: block;
     color: #000;
     text-decoration: none;
+    font-size: 0rem;
+    transition: 1s;
   }
 }
 
@@ -86,3 +86,25 @@ label {
       from { display: none; }
       to { display: flex; }
     }*/
+
+
+.navMenu  {
+  width: 0vw;
+  height: 0vh;
+  background-color: white;
+  transition: all 1s;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.activeMenu {
+  width: 100vw;
+  height: 120vh;
+
+    a {
+      font-size: 3rem;
+    }
+}

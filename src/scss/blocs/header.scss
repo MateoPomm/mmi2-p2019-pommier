@@ -19,13 +19,16 @@
   height:80px;
   background:#FFF;
   position: relative;
+  z-index: 100000;
 }
 #siteWrapper header.fixed {
   position:fixed;
   width:100%;
   top:0;
   left:0;
+  z-index: 100000;
 }
 #siteWrapper header.fixed+#content {
   margin-top:80px;
+  z-index: 100000;
 }

@@ -3,7 +3,8 @@
 
 .main {
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
+  position: relative;
 }
 .section {
   width: 100%;
@@ -13,26 +14,82 @@
 
 /*====================================================  Section 1  ===================================================*/
 
+.section-2__title {
+  color: white;
+  font-size: 3rem;
+}
+
+/* cell number */
+.main-carousel {
+  width: 50%;
+}
+.carousel-cell {
+  width: 100%; /* full width */
+  height: 160px; /* height of carousel */
+  margin-right: 10px;
+}
 
 
 
+.flickity-slider {
+  transform: translateX(0%);
+}
 
+/* no circle */
+.flickity-button {
+  background: transparent;
+}
+/* big previous & next buttons */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: white;
+}
+/* hide disabled button */
+.flickity-button:disabled {
+  display: none;
+}
 
 /*====================================================  Section 2  ===================================================*/
 
 
 .products {
   background-color: #080828;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
+.carousel-cell img{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.flickity-viewport {
+  height: 100%;
+}
+.carousel-cell {
+  height: 100%;
+}
+.main-carousel {
+  width: 100%;
+  margin-top: -80px;
+  height: 100%;
+}
+.flickity-button {
+  display: none;
+}
+.flickity-page-dots {
+    bottom: 50px;
 
-
+    .dot {
+      background: white;
+    }
+}
 /*====================================================  Section 3  ===================================================*/
 
 
-.section3 {
+.section-3 {
   background: url('./../../src/img/bg2.png');
   background-color: white;
   background-attachment: fixed;
@@ -45,7 +102,7 @@
 /*====================================================  Section 4  ===================================================*/
 
 
-.section4 {
+.section-4 {
   background-color: #272057;
 }
 
@@ -53,7 +110,7 @@
 /*====================================================  Section 5  ===================================================*/
 
 
-.section5 {
+.section-5 {
   background: url('./../../src/img/bg3.png');
   background-color: white;
   background-attachment: fixed;
@@ -66,6 +123,6 @@
 /*====================================================  Section 6  ===================================================*/
 
 
-.section6 {
+.section-6 {
   background-color: #080828;
 }
