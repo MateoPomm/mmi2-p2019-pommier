@@ -17,9 +17,12 @@
 
 #siteWrapper header {
   height:80px;
+  width: 100%;
   background:#00000B;
-  position: relative;
+  position: absolute;
   z-index: 100000;
+  top:0;
+  left:0;
 }
 #siteWrapper header.fixed {
   position:fixed;
