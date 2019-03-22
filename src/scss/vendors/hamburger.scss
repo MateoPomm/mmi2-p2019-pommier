@@ -7,9 +7,9 @@ label {
     right: 5%;
     top: 50%;
     z-index: 100;
-    background: #FFF;
+    background: #000;
     transition: .5s ease-in-out;
-    box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+    box-shadow: 0 0 0 0 #000, 0 0 0 0 #000;
     cursor: pointer;
   }
   .hamburger {
@@ -18,7 +18,7 @@ label {
     right: 5%;
     width: 30px;
     height: 2px;
-    background: #000;
+    background: #FCFCFC;
     display: block;
     transform-origin: center;
     transition: .5s ease-in-out;
@@ -30,7 +30,7 @@ label {
       display: block;
       width: 100%;
       height: 100%;
-      background: #000;
+      background: #FCFCFC;
     }
     &:before {
       top: -10px;
@@ -73,7 +73,7 @@ label {
   a {
     margin-bottom: 1em;
     display: block;
-    color: #000;
+    color: #FCFCFC;
     text-decoration: none;
     font-size: 0rem;
     transition: 1s;
@@ -91,7 +91,7 @@ label {
 .navMenu  {
   width: 0vw;
   height: 0vh;
-  background-color: white;
+  background-color: #000;
   transition: all 1s;
   position: absolute;
   right: 0;

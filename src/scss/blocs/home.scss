@@ -1,6 +1,5 @@
 .home {
-  background: url('./../../src/img/bg1.png');
-  background-color: white;
+  background-color: #F8EAD6;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  color: white;
+  color: #B5372D;
   height: 100%;
 
   .home__title {
@@ -21,7 +20,7 @@
     width: 200px;
   }
   .home__arrow {
-    color: white;
+    color: #B5372D;
 
     i {
       font-size: 4rem;

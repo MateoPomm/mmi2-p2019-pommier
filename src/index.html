@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lost In Space</title>
+  <title>Paradise Burger</title>
   <link rel="stylesheet" href="scss/styles.scss">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
@@ -13,7 +13,7 @@
 <!--==================================================  HOME  ==================================================-->
 
     <section class="section home">
-      <h1 class="home__title">Lost In Space</h1>
+      <h1 class="home__title">Paradise Burger</h1>
       <img src="./img/logoNasa.png" class="home__logo">
       <a class="home__arrow" href="#products"><i class="fas fa-angle-down hvr-sink"></i>
     </section>
@@ -34,7 +34,7 @@
             <div class="navMenu" id="navMenu">
                 <ul>
                   <li>
-                    <a href="#">Home</a>
+                    <a href="#">Accueil</a>
                   </li>
                   <li>
                     <a href="#">About</a>
@@ -52,18 +52,27 @@
 
       <main class="main">
         <section class="section section-2 products" id="products">
-          <h2 class="section-2__title">Des téléscopes d'exception</h2>
+          <h2 class="section-2__title">
+
+          </h2>
+          <span class="section-2__trait"></span>
+          <p>
+
+          </p>
         </section>
-        <section class="section section-3">
-          <div class="main-carousel">
+        <section class="section-bis section-3">
+          <h2>
+            Les nouveautés
+          </h2>
+        </section>
+        <section class="section section-4">
+         <!-- <div class="main-carousel">
             <div class="carousel-cell"><img src="./img/logoNasa.png"></div>
             <div class="carousel-cell"></div>
             <div class="carousel-cell"></div>
-          </div>
+            </div> -->
         </section>
-        <section class="section section-4">
-        </section>
-        <section class="section section-5">
+        <section class="section-bis section-5">
         </section>
         <section class="section section-6">
         </section>
@@ -91,7 +100,7 @@
       const windowHeight = document.body.clientHeight,
         currentScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
-      header.className = (currentScroll >= windowHeight) ? "fixed" : "";
+      header.className = (currentScroll > windowHeight) ? "fixed" : "";
     }
 
     addEventListener("scroll", scrolled, false);
