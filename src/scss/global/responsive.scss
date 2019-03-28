@@ -1,0 +1,43 @@
+@media screen and (min-width: 1280px) {
+
+}
+
+
+@media screen and (max-width: 1279px) {
+
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 959px) {
+
+
+}
+
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+
+
+}
+
+
+@media screen and (min-width:1280px) and (max-width: 1920px) {
+
+.main-carousel {
+  width: 35% !important;
+}
+.section-6 {
+  flex-direction: row !important;
+  flex-wrap: wrap;
+
+  span {
+    display: none;
+  }
+}
+.section-6__box {
+    width: 30% !important;
+}
+
+}
+
+@media screen and (min-width:1921px)  {
+
+}

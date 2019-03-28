@@ -5,7 +5,7 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-  font-family: 'comfortaa';
+  font-family: 'Antonio';
 }
 .section {
   width: 100%;
@@ -64,6 +64,7 @@
 
   p {
     color: white;
+    text-align: center;
   }
 }
 
@@ -93,7 +94,48 @@
 
 /*====================================================  Section 2  ===================================================*/
 
+.section-2 {
+  height: 150%;
+}
+.section-2__container {
+  height: 80%;
+  width: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 
+  span {
+    border:1px solid black;
+    height: 5%;
+    width: 0;
+    box-shadow: #B5372D 5px 5px;
+
+  }
+
+  div:nth-child(3) {
+    display: none;
+  }
+  span:nth-child(4) {
+    display: none;
+  }
+}
+.section-2__container__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  h2 {
+    font-size: 2rem;
+    color: #B5372D;
+    text-shadow: black 1px 1px;
+  }
+  p {
+    margin-top: 5%;
+  }
+}
 .carousel-cell img{
   width: 100%;
   /*position: absolute;
@@ -133,12 +175,13 @@
     height: 100%;
     width: 100%;
     color: white;
-    font-size: 2rem;
+    font-size: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(0,0,0,0.4);
     font-weight: bold;
+    font-family: 'PassionOne';
 }
 
 /*====================================================  Section 4  ===================================================*/
@@ -220,4 +263,19 @@ footer {
   height: 15%;
   background-color: #00000B;
   border-top: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.8rem;
+
+  p {
+    color: white;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+  }
 }

@@ -12,10 +12,12 @@
 
 <!--==================================================  HOME  ==================================================-->
 
-    <section class="section home">
-      <h1 class="home__title">Paradise Burger</h1>
-      <img src="./img/logoNasa.png" class="home__logo">
-      <a class="home__arrow" href="#products"><i class="fas fa-angle-down hvr-sink"></i>
+    <section class="section home" id="home">
+      <div>
+        <h1 class="home__title">PARADISE BURGERS</h1>
+        <img src="./img/PBLogo.png" class="home__logo">
+        <a class="home__arrow" href="#products"><i class="fas fa-angle-down hvr-sink"></i>
+      </div>
     </section>
 
 <!--==================================================  PAGE WEB  ==================================================-->
@@ -29,8 +31,9 @@
 
 <!--==================================================  MAIN  ==================================================-->
 
-      <main class="main">
+      <main class="main" >
         <header class="header">
+          <img src="./img/PBLogo3.png" class="header__logo" alt="Burger Paradise Logo">
           <label>
             <input type="checkbox" id="checkbox">
               <span class="menu" id="menu">
@@ -40,33 +43,65 @@
               <div class="navMenu" id="navMenu">
                   <ul>
                     <li>
-                      <a href="#">Accueil</a>
+                      <a href="#home">Accueil</a>
                     </li>
                     <li>
-                      <a href="#">About</a>
+                      <a href="#new">Nouveautés</a>
                     </li>
                     <li>
-                      <a href="#">Work</a>
+                      <a href="#classics">Les classiques</a>
                     </li>
                   </ul>
               </div>
           </label>
         </header>
         <section class="section section-2 products" id="products">
-          <h2 class="section-2__title">
+          <div class="section-2__container">
+            <div class="section-2__container__box">
+              <h2>
+                Paradise Burger et le goût
+              </h2>
+              <p>
+                Chez <strong>Paradise Burger</strong>, on ne lésine pas avec le goût, et cela depuis 1999 ! Si vous commandez chez nous, ce n’est pas pour manger l’emballage (nous ne vous jugerons pas si vous le faites), c’est pourquoi nos chefs mettent tout leur coeur dans la réalisation de vos hamburgers, afin que ceux-ci soient à la hauteur de vos attentes.
+                Et comme nous savons que certains parmis vous ne tolèrent pas la viande, nous vous proposons des recettes exclusives <strong>vegan</strong> !
+                Plus d’excuse pour ne pas venir manger chez nous !
+              </p>
+            </div>
 
-          </h2>
-          <span class="section-2__trait"></span>
-          <p>
+            <span></span>
 
-          </p>
+            <div class="section-2__container__box">
+              <h2>
+                Vos hamburgers préférés, en restaurant ou à domicile
+              </h2>
+              <p>
+                Nos 3 restaurants à <strong>Angoulême, Soyaux et Champniers</strong>, sont ouverts jusqu’à 23 heures pour combler n’importe laquelle de votre faim, même la plus tardive (sauf au delà de 23 heures, evidemment).
+                De plus notre système de <strong>livraison à domicile</strong> vous garantit de recevoir votre hamburger chez vous, encore chaud et plein de saveur.
+                Mais si vous voulez prendre votre hamburger en restaurant et vous envoler autre part, vous pourrez toujours utiliser notre système de drive.
+              </p>
+            </div>
+
+            <span></span>
+
+            <div class="section-2__container__box">
+              <h2>
+                Des hamburgers de qualité, qui privilégient le local
+              </h2>
+              <p>
+                Nos burgers sont faits avec des <strong>produits de qualité</strong>:
+                La viande étant au coeur d’un hamburger, elle doit être la meilleure possible. C’est pourquoi elle est <strong>100% d’origine Française</strong> et provient d'agriculteurs de la région Charente.
+                Quand à nos assaisonnement, ils proviennent de circuit court de producteurs locaux, pour donner toute leur fraîcheur à nos hamburgers.
+                Finalement pour bien les entourer, nous sélectionnons nos pains chez des <strong>artisans boulanger</strong> afin de vous offrir la <strong>meilleure des expériences culinaires</strong>.
+              </p>
+            </div>
+          </div>
         </section>
         <section class="section-bis section-3">
           <h2>
             Les nouveautés
           </h2>
         </section>
-        <section class="section section-4">
+        <section class="section section-4" id="new">
          <div class="main-carousel">
             <div class="carousel-cell"><img
               src="http://www.lezincaburger.com/wp-content/uploads/2016/11/burger-bun-douillet.jpg"
@@ -78,7 +113,7 @@
                       http://www.lezincaburger.com/wp-content/uploads/2016/11/burger-bun-douillet-400x400.jpg 400w"
               alt="Hamburger Chèvre Miel">
               <p>
-                CoucoUC
+                Venez goûter aux plaisirs de la campagne grâce a notre nouvelle recette au fromage de chèvre et au miel.
               </p>
             </div>
             <div class="carousel-cell"><img
@@ -91,7 +126,7 @@
                       http://www.lezincaburger.com/wp-content/uploads/2016/11/burger-bun-envoutant-400x400.jpg 400w"
               alt="Hamburger Steak de Légume">
               <p>
-                oiqzHJDmuqSHmd
+                Laissez-vous envouter par notre Hamburger spécial au steak de légumes, accompagné de sa sauce bernaise.
               </p>
             </div>
           </div>
@@ -101,7 +136,7 @@
         <section class="section-bis section-5">
           <h2>Les classiques</h2>
         </section>
-        <section class="section section-6">
+        <section class="section section-6" id="classics">
           <div class="section-6__box">
             <h3>Le justicier</h3>
             <img src="http://www.lezincaburger.com/wp-content/uploads/2016/11/burger-bun-le-justicier.jpg"
@@ -201,7 +236,8 @@
           </div>
         </section>
         <footer>
-
+          <p>PARADISE BURGERS ©</p>
+          <a>Mentions Légales</a>
         </footer>
       </main>
 
