@@ -95,9 +95,10 @@
 /*====================================================  Section 2  ===================================================*/
 
 .section-2 {
-  height: 150%;
+  height: 100%;
 }
 .section-2__container {
+  margin-top:10%;
   height: 80%;
   width: 80%;
   text-align: center;
@@ -113,11 +114,16 @@
     box-shadow: #B5372D 5px 5px;
 
   }
-
+  span:nth-child(2) {
+    display: none;
+  }
   div:nth-child(3) {
     display: none;
   }
   span:nth-child(4) {
+    display: none;
+  }
+  div:nth-child(5) {
     display: none;
   }
 }
